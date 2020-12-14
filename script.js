@@ -1,5 +1,5 @@
 // Dati raccolti dall'utente e verifica
-var km = prompt('Quanti km vuoi percorrere?');
+var km = prompt('Quanti chilometri vuoi percorrere?');
 var age = "";
 
 if (isNaN(km)) {
