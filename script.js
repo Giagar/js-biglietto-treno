@@ -24,7 +24,6 @@ if (isNaN(km)) {
         };
 
         // Costo arrotondato ai centesimi
-        console.log('cost', cost)
         cost = Math.round(cost * 100) / 100;
 
         document.querySelector('#cost').innerHTML = cost;
