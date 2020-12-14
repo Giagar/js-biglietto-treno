@@ -1,6 +1,3 @@
-// Variabili generiche
-var result = "";
-
 // Dati raccolti dall'utente
 var km = parseInt(prompt('Quanti km vuoi percorrere?'));
 var age = parseInt(prompt('Quanti anni hai?'));
@@ -14,11 +11,10 @@ if (age < 18) {
 } else if (age > 65) {
     cost = cost - (cost / 100 * 40);
 } else {
-    null; 
+    null;
 }
 
 // Costo arrotondato ai centesimi
 cost = Math.round(cost);
-result = "Il costo del biglietto è di " + cost + "€";
 
-document.querySelector("#cost-container").innerHTML = result;
+document.querySelector("#cost").innerHTML = cost;
